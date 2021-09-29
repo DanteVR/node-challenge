@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13.2
+    container_name: db
+    network_mode: "host"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: challenge
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+
+  createservice:
+    image: node:14
+    build: createservice
+    restart: always
+    container_name: createservice
+    network_mode: host
+    depends_on:
+      - db
+    volumes:
+      - ./createservice:/usr/app
+      - /usr/app/node_modules
+
+  averageservice:
+    image: node:14
+    build: averageservice
+    restart: always
+    container_name: averageservice
+    network_mode: host
+    depends_on:
+      - db
+    volumes:
+      - ./averageservice:/usr/app
+      - /usr/app/node_modules
+
+  listservice:
+    image: node:14
+    build: listservice
+    restart: always
+    container_name: listservice
+    network_mode: host
+    depends_on:
+      - db
+    volumes:
+      - ./listservice:/usr/app
+      - /usr/app/node_modules
+
+  web:
+    image: nginx
+    volumes:
+      - ./web:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_HOST=web.com
+      - NGINX_PORT=80

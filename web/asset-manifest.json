@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ba45527.chunk.css",
+    "main.js": "/static/js/main.159331e9.chunk.js",
+    "main.js.map": "/static/js/main.159331e9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8be47f6a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8be47f6a.js.map",
+    "static/js/2.38c32fe0.chunk.js": "/static/js/2.38c32fe0.chunk.js",
+    "static/js/2.38c32fe0.chunk.js.map": "/static/js/2.38c32fe0.chunk.js.map",
+    "static/js/3.19ffd8a6.chunk.js": "/static/js/3.19ffd8a6.chunk.js",
+    "static/js/3.19ffd8a6.chunk.js.map": "/static/js/3.19ffd8a6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1ba45527.chunk.css.map": "/static/css/main.1ba45527.chunk.css.map",
+    "static/media/bell.f3a9a893.svg": "/static/media/bell.f3a9a893.svg",
+    "static/media/calendar.f8906f8c.svg": "/static/media/calendar.f8906f8c.svg",
+    "static/media/clock.41e9ed34.svg": "/static/media/clock.41e9ed34.svg",
+    "static/media/smile.f8b3a348.svg": "/static/media/smile.f8b3a348.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8be47f6a.js",
+    "static/js/2.38c32fe0.chunk.js",
+    "static/css/main.1ba45527.chunk.css",
+    "static/js/main.159331e9.chunk.js"
+  ]
+}
